@@ -1,0 +1,10 @@
+testContext/ScenarioContext.class
+testContext/TestContext.class
+stepDefinitions/Steps_Table.class
+stepDefinitions/Steps_EcommersePage.class
+stepDefinitions/SampleSteps.class
+stepDefinitions/Hooks.class
+runners/TestRunner.class
+stepDefinitions/Steps_HomePage.class
+stepDefinitions/Steps_RegistrationPage.class
+stepDefinitions/Steps_LoginPage.class
