@@ -31,7 +31,7 @@ public class HomePage {
 	 private WebElement txtbx_UserName;
 	 @FindBy(how = How.XPATH, using = "//input[@type='password'][@name='password']") 
 	 private WebElement txtbx_password;
-	 @FindBy(how = How.XPATH, using = "//input[@type='submit'][@value='Login']") 
+	 @FindBy(how = How.XPATH, using = "//input[@type='submit'][@value='Loginnn']") 
 	 private WebElement btn_Login;
 	 @FindBy(how = How.XPATH, using = "//a[text()='Join us']") 
 	 private WebElement link_Joinus;

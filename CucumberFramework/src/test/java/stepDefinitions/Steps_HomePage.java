@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.vimalselvam.cucumber.listener.Reporter;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -31,6 +33,8 @@ public class Steps_HomePage {
 	 
 		@Given("^user is on homepage$")
 		public void user_is_on_homepage() throws Throwable {
+			//Reporter.addScenarioLog("This is a registration scenario");
+			//Reporter.addStepLog("This is a home page of AUT");
 			try {
 				
 				//testContext.getWebDriverManager().getDriver().manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);

@@ -15,5 +15,6 @@ pageObjects/HomePage.class
 utility/TakeScreenShot.class
 enums/EnvironmentType.class
 utility/WaitUtility.class
+pageObjects/TestPage.class
 pageObjects/EcommersePage.class
 dataProviders/ConfigFileReader.class

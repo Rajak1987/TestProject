@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: runners.TestRunner2
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 86.737 s <<< FAILURE! - in runners.TestRunner2
+| Email1 | Password1 |.When enter valid "Email1" and "Password1" and click login  Time elapsed: 0.005 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='submit'][@value='Loginnn']"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IN1-1020122MBP.local', ip: 'fe80:0:0:0:892:5cd2:b903:632d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/fv/0q160ngj0kb...}, goog:chromeOptions: {debuggerAddress: localhost:62937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c10ed30a9dffe9864af9efcb0351234a
+*** Element info: {Using=xpath, value=//input[@type='submit'][@value='Loginnn']}
+
+| Email1 | Password1 |  Time elapsed: 0.006 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='submit'][@value='Loginnn']"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IN1-1020122MBP.local', ip: 'fe80:0:0:0:892:5cd2:b903:632d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/fv/0q160ngj0kb...}, goog:chromeOptions: {debuggerAddress: localhost:62937}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c10ed30a9dffe9864af9efcb0351234a
+*** Element info: {Using=xpath, value=//input[@type='submit'][@value='Loginnn']}
+
+| Email2 | Password2 |.When enter valid "Email2" and "Password2" and click login  Time elapsed: 0.001 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='submit'][@value='Loginnn']"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IN1-1020122MBP.local', ip: 'fe80:0:0:0:892:5cd2:b903:632d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/fv/0q160ngj0kb...}, goog:chromeOptions: {debuggerAddress: localhost:62970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 86aa3a0393fc0aea441fa75c4f9b9b43
+*** Element info: {Using=xpath, value=//input[@type='submit'][@value='Loginnn']}
+
+| Email2 | Password2 |  Time elapsed: 0.001 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@type='submit'][@value='Loginnn']"}
+  (Session info: chrome=80.0.3987.149)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'IN1-1020122MBP.local', ip: 'fe80:0:0:0:892:5cd2:b903:632d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /var/folders/fv/0q160ngj0kb...}, goog:chromeOptions: {debuggerAddress: localhost:62970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 86aa3a0393fc0aea441fa75c4f9b9b43
+*** Element info: {Using=xpath, value=//input[@type='submit'][@value='Loginnn']}
+

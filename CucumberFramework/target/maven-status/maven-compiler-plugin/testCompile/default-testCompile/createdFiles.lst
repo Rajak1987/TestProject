@@ -4,7 +4,7 @@ stepDefinitions/Steps_Table.class
 stepDefinitions/Steps_EcommersePage.class
 stepDefinitions/SampleSteps.class
 stepDefinitions/Hooks.class
-runners/TestRunner.class
 stepDefinitions/Steps_HomePage.class
 stepDefinitions/Steps_RegistrationPage.class
+runners/TestRunner2.class
 stepDefinitions/Steps_LoginPage.class

@@ -12,6 +12,7 @@ import com.vimalselvam.cucumber.listener.Reporter;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import managers.FileReaderManager;
 //import managers.UtilityManager;
 //import managers.WebDriverManager;
 import testContext.TestContext;
@@ -28,33 +29,25 @@ public class Hooks {
 	@Before
 	 public void BeforeSteps(Scenario scenario) {
 		System.out.println(".................Before hook.............................");
-		if (scenario.getName().equals("Table scenario")) {
+		System.out.println(scenario.getName());
+		//if (scenario.getName().equals("SuccessfulRegistration")) {
 			
+			//Reporter.assignAuthor("SampleAutomation - Rajak Basha");
 
-		Reporter.assignAuthor("SampleAutomation - Rajak Basha");
-
-	}
+	//}
 	}
 	@After(order = 1)
 	 public void afterScenario(Scenario scenario) {
-	 if (scenario.isFailed()) {
-	 String screenshotName = scenario.getName().replaceAll(" ", "_");
-	 try {
-	 //This takes a screenshot from the driver at save it to the specified location
-	 File sourcePath = ((TakesScreenshot) testContext.getWebDriverManager().getDriver()).getScreenshotAs(OutputType.FILE);
+	if (scenario.isFailed()) {
+	try {
+		WebDriver driver = testContext.getWebDriverManager().getDriver();
+		final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+		scenario.embed(screenshot, "image/png");
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
 	 
-	 //Building up the destination path for the screenshot to save
-	 //Also make sure to create a folder 'screenshots' with in the cucumber-report folder
-	 File destinationPath = new File("/Users/1020122/eclipse-workspace1/CucumberFramework/target/cucumber-reports/screenshots/" + screenshotName + ".png");
-	 
-	 //Copy taken screenshot from source location to destination location
-	 Files.copy(sourcePath, destinationPath);   
-	 
-	 //This attach the specified screenshot to the test
-	 Reporter.addScreenCaptureFromPath(destinationPath.toString());
-	 } catch (IOException e) {
-	 } 
-	 }
+	}
 	 }
 //	@After(order=1)
 //	public void afterScenario(Scenario scenario) {

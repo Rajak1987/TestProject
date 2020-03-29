@@ -45,7 +45,7 @@ public class ExcelFileReader {
 	public String getExcelData(String TestDataName) {
 		Sheet TmuSheet = null;
 		try {
-		TmuSheet = FileReaderManager.getInstance().getExcelReader().readExcel(FileReaderManager.getInstance().getConfigReader().getExcelFilePath(),FileReaderManager.getInstance().getConfigReader().getExcelFileName(),FileReaderManager.getInstance().getConfigReader().getExcelSheetName());
+		TmuSheet = FileReaderManager.getInstance().getExcelReader().readExcel(System.getProperty("user.dir")+FileReaderManager.getInstance().getConfigReader().getExcelFilePath(),FileReaderManager.getInstance().getConfigReader().getExcelFileName(),FileReaderManager.getInstance().getConfigReader().getExcelSheetName());
 		//Sheet TmuSheet = new ExcelFileReader().readExcel(System.getProperty("user.dir")+"/configs/","platformConfiguration.xlsx","Sheet2");
 		}catch(Exception e) {
 			System.out.println(e.getClass());
